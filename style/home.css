@@ -1,0 +1,66 @@
+/* ---------- HOME CARDS ---------- */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 13px;
+    padding: 30px;
+
+    min-height: 245px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background: var(--card-hover);
+    border-color: var(--gold);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.card-number {
+    color: var(--gold-light);
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--white);
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: var(--text);
+    font-size: 15px;
+}
+
+.card-link {
+    margin-top: auto;
+    padding-top: 20px;
+    color: var(--gold-light);
+    font-size: 14px;
+}
+
+/*---- HOME-RESPONSIVE ----*/
+@media (max-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,75 @@
+/* =========================================
+   CAREER PAGE
+========================================= */
+
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.career-card {
+    background: #111827;
+    border: 1px solid #263044;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.career-card:hover {
+    transform: translateY(-8px);
+    border-color: #b8892d;
+}
+
+.career-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.career-content {
+    padding: 25px;
+}
+
+.career-content h2 {
+    font-family: Georgia, serif;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.career-content p {
+    color: #aab3c2;
+    line-height: 1.7;
+}
+
+.career-content ul {
+    margin-top: 15px;
+    padding-left: 20px;
+    color: #aab3c2;
+    line-height: 1.8;
+}
+
+.career-tag {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 6px 12px;
+    border-radius: 15px;
+    background: #29241d;
+    color: #d6a33d;
+
+    font-size: 12px;
+}
+
+/* ----- CAREERS RESPONSIVE -----*/
+
+@media (max-width: 900px) {
+    .career-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .career-grid {
+        grid-template-columns: 1fr;
+    }
+}

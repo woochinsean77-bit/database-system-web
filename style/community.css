@@ -1,0 +1,135 @@
+/* ---------- COMMUNITY ---------- */
+
+.member-list {
+    display: grid;
+    gap: 18px;
+}
+
+.member {
+    display: grid;
+    grid-template-columns: 70px 1fr auto;
+    align-items: center;
+    gap: 20px;
+
+    padding: 22px;
+
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.member:hover {
+    border-color: var(--gold);
+    transform: translateX(5px);
+}
+
+.member-number {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #28231b;
+    color: var(--gold-light);
+    font-weight: bold;
+}
+
+.member h3 {
+    margin: 0 0 4px;
+    color: var(--white);
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.member p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.visit-btn {
+    padding: 9px 17px;
+    border: 1px solid var(--gold);
+    border-radius: 5px;
+    color: var(--gold-light);
+
+    transition: 0.3s;
+}
+
+.visit-btn:hover {
+    background: var(--gold);
+    color: #111;
+}
+
+/* =========================================
+   COMMUNITY MEMBER CARDS
+========================================= */
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.member-card {
+    background: #111827;
+    border: 1px solid #263044;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-7px);
+    border-color: #b8892d;
+}
+
+.member-avatar {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #29241d;
+    color: #d6a33d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.member-card h2 {
+    font-family: Georgia, serif;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.member-card p {
+    color: #9ba5b5;
+}
+
+.member-card a {
+    display: inline-block;
+    margin-top: 18px;
+    color: #d6a33d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+@media (max-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
